@@ -1,0 +1,171 @@
+/* SUPPRIMER PROPRIETES GENERALES 
+- AJOUTER LES VARIABLES POUR COULEUR ET FONT */ 
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.presse-main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w100 {
+    width:100%;
+}
+
+
+/****** TEXTES ******/
+
+.presse-titre, .presse-soustitre {
+    /*font-family*/
+    font-size: 35px;
+    color:blue;
+    text-transform: uppercase;
+}
+
+#titre-accr {
+    color:red;
+}
+
+.presse-soustitre {
+    font-size: 20px;
+    width:30%;
+    font-family: 'Poppins';
+}
+
+.presse-texte, .presse-lien {
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: blue;
+    margin-top: 20px;
+}
+
+.presse-nom, .presse-lien {
+    font-weight: 700;
+}
+
+/******** DIV ********/
+.overflow {
+    overflow: hidden;
+}
+
+.presse-div {
+    margin: 60px 0;
+}
+
+#presse-contact {
+    width: 25%;
+}
+
+#presse-accr {
+    width: 50%;
+    background: linear-gradient(291deg, #F4A9C4 0%, #FDECBD 100%);
+    padding: 67px;
+    clip-path: polygon(0 6%, 100% 0, 98% 88%, 0 100%);
+}
+
+.presse-docs {
+    height: 20px;
+    margin:30px 20px 30px 0;
+}
+
+.presse-ligne {
+    border: blue 1px solid;
+    height: 0;
+    margin-top: 30px;
+}
+
+#docs-rg.active, #docs-photos.active, #docs-com.active {
+    display: block;
+}
+
+
+/***** LIENS *******/
+.presse-lien {
+    text-decoration: none;
+    padding: 20px 20px 20px 40px;
+    width: 50%;
+    background-color: lightgray;
+    
+}
+
+.presse-lien:hover {
+    transform: scale(1.2);
+}
+
+.presse-telechargements {
+    display: none;
+}
+
+
+/***** REGLAGLES D'IMAGE ******/ 
+
+.presse-plus, .presse-minus {
+   width: 40px;
+}
+
+.presse-dwld {
+    width: 30px;
+}
+
+.presse-minus {
+    display: none;
+}
+#minus-rg.active, #minus-photos.active, #minus-com.active {
+    display: block;
+}
+
+#plus-rg.active,  #plus-photos.active, #plus-com.active{
+    display: none;
+}
+
+@media screen and (max-width: 576px) and (orientation: portrait){
+    .presse-infos {
+      flex-direction: column;
+    }
+  
+    .presse-div {
+      margin: 21px 0;
+    }
+  
+    #presse-contact {
+      width: 85%;
+    }
+  
+    #presse-accr {
+      clip-path: polygon(0 4%, 100% 0%, 98% 85%, 0% 100%);
+      width:100%;
+      padding: 69px 25px;
+    }
+  
+    .presse-texte {
+      padding: 22px 0;
+    }
+  
+    .presse-lien {
+      width: 100%;
+    }
+  
+    .presse-plus, .presse-minus {
+      display: none;
+    }
+  
+    .presse-soustitre {
+      width:100%;
+    }
+}

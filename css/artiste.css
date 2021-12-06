@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+/* PARAMETRES GENERAUX */ 
+.artiste-100 {
+    width: 100%;
+}
+
+.artiste-bande {
+    display: flex;
+    height: 45vh;
+    background-image: url('../img/artiste.jpeg');
+    background-size: cover;
+
+}
+
+
+.artiste-bg {
+    background-color: blue;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    width:55%;
+    
+}
+
+.artiste-infos {
+    width:45%;
+    margin: 16% auto;
+}
+
+.artiste-title {
+    text-transform: uppercase;
+    color: white;
+}
+
+#artiste-name {
+    font-size: 25px;
+}
+
+#artiste-time {
+    font-weight: 900;
+}
+
+.artiste-btn {
+    clip-path: polygon(0 8%, 100% 0, 95% 85%, 0 98%);
+    background-color: palevioletred;
+    width: 237px;
+    height: 67px;
+    border: none;
+    margin: 10px 0;
+}

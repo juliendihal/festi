@@ -1,0 +1,38 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presse-bg {
+    background-image: url('../img/fond-titre.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+
+/* CHANGER COULEUR BRUTE POUR VARIABLE + AJOUTER FONT*/
+.presse-title {
+    color: white;
+    /*font-family:*/ 
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (max-width:576px) and (orientation:portrait){
+    .presse-bg {
+        height: 182px;
+    }
+}
+
+
+

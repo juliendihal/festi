@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/presse_connexion.css">
+    <link rel="stylesheet" href="css/background.css">
+    <title>Connexion - Espace Presse</title>
+</head>
+<body>
+    <main>
+        <section class="presse-bg flex-center">
+            <h1 class="presse-title">Espace Presse</h1>
+        </section>
+
+        <form action="" class="presse-form">
+            <div class="presse-bloc">
+                <label for="inputEmail" class="presse-label">Identifiant</label>
+                <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="presse-input" autocomplete="email" required autofocus>    
+            </div>
+            <div class="presse-bloc">
+                <label for="inputPassword" class="presse-label">Mot de passe</label>
+                <input type="password" name="password" id="inputPassword" class="presse-input" autocomplete="current-password" required>
+            </div>
+            
+            <button class="presse-btn" type="submit">
+                Connexion
+            </button>
+        </form>
+    </main>
+</body>
+</html>
